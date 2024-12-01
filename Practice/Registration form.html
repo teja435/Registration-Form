@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        input {
+            margin: 4px;
+            border-radius: 5px;
+            border:none ;
+        
+            
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: block;
+            margin: 20;
+        }
+        body{
+            background: white;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: rgb(225, 89, 255);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        h2{
+            color: rgb(28, 27, 27);
+            text-align: center;
+
+        }
+        label{
+            color: white;
+            font-size: bold;
+        }
+        .reset{
+            color: white;
+            width: 70px;
+            height: 30px;
+            font-size: large;
+            margin: 5px;
+            background-color: rgb(0,255,200);
+            border: none;
+            border-radius:  8px;
+        }
+        .submit{
+            color: white;
+            width: 70px;
+            height: 30px;
+            font-size: large;
+            margin: 5px;
+            background-color: rgb(51,194,255);
+            border: 2px solid;
+            border-radius:  8px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <form method=" get">
+            <h2> REGISTRATION FORM</h2>
+            <label for="">Name of the student:</label>
+            <input type="text" name="name" required>
+
+
+            <br>
+            <label for="">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+
+            <label for=""> Contact Number:</label>
+            <input type="number" name="number">
+            <br>
+            <label for=""> Address:</label>
+            <input type="address" name="address">
+            <br>
+
+            <label for="">Place:</label>
+            <input type="place" name="place" required>
+            <br>
+
+            <label for="">Date:</label>
+            <input type="date" name="date" required>
+            <br>
+
+            <label for="">Name of the College:</label>
+            <input type="college" name="college">
+            <br>
+
+            <label for="">Branch name:</label>
+            <input type="branch" name="branch"><br>
+
+            <label for="">Registration number:</label>
+            <input type="registration" name="registraion">
+            <br>
+
+
+            <label for="">Father name:</label>
+            <input type="father" name="father">
+            <br>
+            <label for="">Mother name:</label>
+            <input type="Mother" name="mother">
+            <br>
+
+
+
+            <label>Gender</label><br>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+            <br>
+
+            <label>Skills</label><br>
+            <input type="checkbox" name="skills" id="python" value="python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" name="skills" id="java" value="java">
+            
+            
+
+            <input type="checkbox" name="skills" id="mysql" value="mysql" required>
+            <label for="mysql">Mysql</label>
+
+            <br>
+            <button type="reset">reset</button>
+            <button type="submit">Submit</button>
+
+        
+        </form>
+    </div>
+</body>
+
+</html>
